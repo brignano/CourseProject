@@ -187,5 +187,16 @@
         <div>
           <p class = "websiteTitle">The Hartford Form</p>
       </div>
+      <div class="form-group has-feedback">
+        <label for="name" class="control-label">Name</label>
+        <input id="name" type="text" class="form-control" name="name" data-error="Please enter your name." aria-required="true" required/> 
+        <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group has-feedback">
+        <label for="phone" class="control-label">Phone number (optional)</label>
+        <input id="phone" type="tel" class="form-control phone" name="phone-number" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" data-error="That doesn't look quite right. Please enter your phone number in this format: xxx-xxx-xxxx." aria-required="false"/>
+        <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+      </div>
+      
     </body>
 </html>
