@@ -2,11 +2,56 @@
     margin: 0;
     padding: 0;
 }
-
 body{
+    background-color: #F7F7F7;
+}
+.websiteTitle{
     background-color: #ffffff;
+}
+.headerBar{
+    background-color: #B6D3E9;
 }
 
 .websiteTitle{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.policyHolderContactInfo{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+}
+.rowItem{
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.inputGrouping{
+    display: inline-block;
+    padding-right: 20px;    
+
+}
+
+.inputRow{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.inputsWrap{
+    display: inline;
+}
+
+.footerBar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* negative value of footer height */
+    clear: both;
+    background-color: #484848;
 }
