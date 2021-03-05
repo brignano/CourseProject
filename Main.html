@@ -6,201 +6,252 @@
         <link href="Main.CSS" rel="stylesheet">
         <script type="text/javascript" src="https://ts0.hfdstatic.com/sites/higux/v3.3.44/js/app.min.js"></script>
     </head>
-
     <body>
-        <header>
-            <div class="container">
+      <header>
+        <div class="container">
+            <div class="row">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="icon icon-menu"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <img src="https://ts0.hfdstatic.com/sites/higux/v3.3.44/images/logo.svg" alt="The Hartford">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-default collapse navbar-collapse" id="navBar"> <!-- header-->
+            <div class="navbar-primary" id="primaryNav">
+              <div class="container">
                 <div class="row">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+                  <ul class="nav navbar-nav navbar-left">
+                    <button type="button" class="navbar-toggle-close collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
                       <span class="sr-only">Toggle navigation</span>
-                      <i class="icon icon-menu"></i>
+                      <i class="icon icon-close"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                      <img src="https://ts0.hfdstatic.com/sites/higux/v3.3.44/images/logo.svg" alt="The Hartford">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employer/Sponsor View
+                        <i class="icon icon-users"></i>
+                        <i class="icon icon-double-caret"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">First Link Employer View</a>
+                        </li>
+                        <li>
+                          <a href="#">Second Link Sponsor View</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                          <a href="#">Separated link</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-icons navbar-right">
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-notifications">
+                          <span class="badge">24</span>
+                        </i>
+                        <span>Alerts</span>
+                      </a>
+                    </li>
+                    <li class="hidden-sm hidden-xs">
+                      <a href="#">
+                        <i class="icon icon-questions"></i>
+                        <span>Help</span>
+                      </a>
+                    </li>
+                    <li class="dropdown hidden-sm hidden-xs">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-my-account">
+                          <span class="sr-only">My Account</span>
+                        </i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">User Login</a>
+                        </li>
+                        <li>
+                          <a href="#">Account Information</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-secondary" id="secondaryNav">
+              <div class="container">
+                <div class="row">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-dashboard"></i>
+                        <span>Dashboard</span>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="mega-menu">
+                          <div class="col-md-6 mega-menu-left">
+                            <h3>Heading</h3>
+                            <ul>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6 mega-menu-right">
+                            <h3>Heading</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <img src="http://via.placeholder.com/350x200" alt="play video" class="img-responsive">
+                            <ul>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-document"></i>
+                        <span>Claims (3)</span>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="mega-menu">
+                          <div class="col-md-6 mega-menu-left">
+                            <h3>Heading</h3>
+                            <ul>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-6 mega-menu-right">
+                            <h3>Heading</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <img src="http://via.placeholder.com/350x200" alt="play video" class="img-responsive">
+                            <ul>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                              <li><a href="#">Lorem ipsum dolor amit</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-benefits"></i>
+                        <span>Benefits</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-folder"></i>
+                        <span>Documents</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-billing"></i>
+                        <span>Billing</span>
+                      </a>
+                    </li>
+                    <li class="visible-xs visible-sm">
+                      <a href="#">
+                        <i class="icon icon-my-account"></i>
+                        <span>My Profile</span>
+                      </a>
+                    </li>
+                    <li class="visible-xs visible-sm">
+                      <a href="#">
+                        <i class="icon icon-questions"></i>
+                        <span>Help</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="mobile-logout">
+                    <a href="#">
+                      <button class="btn btn-secondary-paired btn-block">Logout</button>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="navbar navbar-default collapse navbar-collapse" id="navBar"> <!-- header-->
-                <div class="navbar-primary" id="primaryNav">
-                  <div class="container">
-                    <div class="row">
-                      <ul class="nav navbar-nav navbar-left">
-                        <button type="button" class="navbar-toggle-close collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <i class="icon icon-close"></i>
-                        </button>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employer/Sponsor View
-                            <i class="icon icon-users"></i>
-                            <i class="icon icon-double-caret"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a href="#">First Link Employer View</a>
-                            </li>
-                            <li>
-                              <a href="#">Second Link Sponsor View</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                              <a href="#">Separated link</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-icons navbar-right">
-                        <li>
-                          <a href="#">
-                            <i class="icon icon-notifications">
-                              <span class="badge">24</span>
-                            </i>
-                            <span>Alerts</span>
-                          </a>
-                        </li>
-                        <li class="hidden-sm hidden-xs">
-                          <a href="#">
-                            <i class="icon icon-questions"></i>
-                            <span>Help</span>
-                          </a>
-                        </li>
-                        <li class="dropdown hidden-sm hidden-xs">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon icon-my-account">
-                              <span class="sr-only">My Account</span>
-                            </i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a href="#">User Login</a>
-                            </li>
-                            <li>
-                              <a href="#">Account Information</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="navbar-secondary" id="secondaryNav">
-                  <div class="container">
-                    <div class="row">
-                      <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon icon-dashboard"></i>
-                            <span>Dashboard</span>
-                          </a>
-                          <div class="dropdown-menu">
-                            <div class="mega-menu">
-                <div class="col-md-6 mega-menu-left">
-                  <h3>Heading</h3>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6 mega-menu-right">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <img src="http://via.placeholder.com/350x200" alt="play video" class="img-responsive">
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                  </ul>
-                </div>
-              </div>
-                          </div>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon icon-document"></i>
-                            <span>Claims (3)</span>
-                          </a>
-                          <div class="dropdown-menu">
-                            <div class="mega-menu">
-                <div class="col-md-6 mega-menu-left">
-                  <h3>Heading</h3>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6 mega-menu-right">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <img src="http://via.placeholder.com/350x200" alt="play video" class="img-responsive">
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                    <li><a href="#">Lorem ipsum dolor amit</a></li>
-                  </ul>
-                </div>
-              </div>
-                          </div>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="icon icon-benefits"></i>
-                            <span>Benefits</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="icon icon-folder"></i>
-                            <span>Documents</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="icon icon-billing"></i>
-                            <span>Billing</span>
-                          </a>
-                        </li>
-                        <li class="visible-xs visible-sm">
-                          <a href="#">
-                            <i class="icon icon-my-account"></i>
-                            <span>My Profile</span>
-                          </a>
-                        </li>
-                        <li class="visible-xs visible-sm">
-                          <a href="#">
-                            <i class="icon icon-questions"></i>
-                            <span>Help</span>
-                          </a>
-                        </li>
-                      </ul>
-                      <div class="mobile-logout">
-                        <a href="#">
-                          <button class="btn btn-secondary-paired btn-block">Logout</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </header>
-        <div class = "websiteTitle">
+            </div>
+          </div>
+    </header>
+    
+      <div class = "websiteTitle">
           <p>The Hartford Form</p>
       </div>
-      <div class = "policyHolderContactInfo">
-        <div class = "row">
-          <div class="form-group has-feedback rowItem">
-            <label for="name" class="control-label">Name</label>
-            <input id="name" type="text" class="form-control" name="name" data-error="Please enter your name." aria-required="true" required/> 
-            <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+      
+      <div class = "inputsWrap">
+        <div class = "policyHolderContactInfo">
+          <div class = "inputRow">
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="fName" class="control-label">First Name</label>
+                  <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>                  
+              </div>
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="lName" class="control-label">Last Name</label>
+                  <input id="lName" type="text" class="form-control" name="lName" data-error="Please enter your last name." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>                  
+              </div>
           </div>
-          <div class="form-group has-feedback rowItem">
-            <label for="phone" class="control-label">Phone number (optional)</label>
-            <input id="phone" type="tel" class="form-control phone" name="phone-number" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" data-error="That doesn't look quite right. Please enter your phone number in this format: xxx-xxx-xxxx." aria-required="false"/>
-            <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+          <div class="inputRow">
+            <div class="inputGrouping">
+              <div class="form-group has-feedback rowItem">
+                <label for="phone" class="control-label">Phone number (optional)</label>
+                <input id="phone" type="tel" class="form-control phone" name="phone-number" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" data-error="That doesn't look quite right. Please enter your phone number in this format: xxx-xxx-xxxx." aria-required="false"/>
+                <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+              </div>                   
+            </div>
+            <div class="inputGrouping">
+              <div class="form-group has-feedback">
+                <label for="email" class="control-label">Email</label>
+                <input id="email" type="email" class="form-control" name="email" pattern=".*@\w{2,}\.\w{2,}.*" data-error="That doesn’t look quite right. Please enter your email in this format: name@domain.com." aria-required="true" required/>
+                <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class = "inputRow">
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="streetAddress" class="control-label">Street Address:</label>
+                  <input id="streetAddress" type="text" class="form-control" name="streetAddress" data-error="Please enter your first name." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>                  
+              </div>
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="city" class="control-label">Town/City:</label>
+                  <input id="city" type="text" class="form-control" name="city" data-error="Please enter your town or city." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>                 
+              </div>
+              <div class="inputGrouping">
+                <div class="form-group has-feedback">
+                  <label for="zip" class="control-label">ZIP Code</label>
+                  <input id="zip" type="text" class="form-control zip" name="zip" minlength="5" maxlength="10" placeholder="00000 or 00000-0000" pattern="(\d{5}([\-]\d{4})?)" data-error="Please enter your zip code." aria-required="true" required/>
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>                                  
+              </div>
           </div>
         </div>
-      </div>        
-    </body>
+      </div>
+      <footer>
+          <div class="footerBar">
+              <p>Footer Goes Here</p>
+          </div>
+      </footer>
+  </body>
 </html>
