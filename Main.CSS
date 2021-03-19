@@ -52,12 +52,3 @@ text-align: center;
 .inputsWrap{
     display: inline;
 }
-
-.footerBar{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* negative value of footer height */
-    clear: both;
-    background-color: #484848;
-}
