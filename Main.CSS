@@ -5,9 +5,13 @@
 body{
     background-color: #F7F7F7;
 }
-.websiteTitle{
-    background-color: #ffffff;
+.fullBodyWrap{
+    padding-bottom: 44px;
 }
+.sectionHeader{
+text-align: center;
+}
+
 .headerBar{
     background-color: #B6D3E9;
 }
@@ -16,6 +20,8 @@ body{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #ffffff;
+
 }
 
 .policyHolderContactInfo{
@@ -48,7 +54,7 @@ body{
 }
 
 .footerBar{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* negative value of footer height */

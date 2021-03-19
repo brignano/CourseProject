@@ -183,75 +183,156 @@
               </div>
             </div>
           </div>
-    </header>
-    
-      <div class = "websiteTitle">
-          <p>The Hartford Form</p>
-      </div>
-      
-      <div class = "inputsWrap">
-        <div class = "policyHolderContactInfo">
-          <div class = "inputRow">
-              <div class="inputGrouping">
-                <div class="form-group has-feedback rowItem">
-                  <label for="fName" class="control-label">First Name</label>
-                  <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
-                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </div>                  
-              </div>
-              <div class="inputGrouping">
-                <div class="form-group has-feedback rowItem">
-                  <label for="lName" class="control-label">Last Name</label>
-                  <input id="lName" type="text" class="form-control" name="lName" data-error="Please enter your last name." aria-required="true" required/> 
-                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </div>                  
-              </div>
-          </div>
-          <div class="inputRow">
-            <div class="inputGrouping">
-              <div class="form-group has-feedback rowItem">
-                <label for="phone" class="control-label">Phone number (optional)</label>
-                <input id="phone" type="tel" class="form-control phone" name="phone-number" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" data-error="That doesn't look quite right. Please enter your phone number in this format: xxx-xxx-xxxx." aria-required="false"/>
-                <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-              </div>                   
+      </header>
+      <div class = "fullBodyWrap">
+        <div class = "websiteTitle">
+            <p>The Hartford Form</p>
+        </div>
+        
+        <div class = "inputsWrap">
+          <div class = "policyHolderContactInfo">
+            <p class = "sectionHeader">Policyholder Contact Info</p>
+            <div class = "inputRow">
+                <div class="inputGrouping">
+                  <div class="form-group has-feedback rowItem">
+                    <label for="fName" class="control-label">First Name</label>
+                    <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
+                    <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                  </div>                  
+                </div>
+                <div class="inputGrouping">
+                  <div class="form-group has-feedback rowItem">
+                    <label for="lName" class="control-label">Last Name</label>
+                    <input id="lName" type="text" class="form-control" name="lName" data-error="Please enter your last name." aria-required="true" required/> 
+                    <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                  </div>                  
+                </div>
             </div>
-            <div class="inputGrouping">
-              <div class="form-group has-feedback">
-                <label for="email" class="control-label">Email</label>
-                <input id="email" type="email" class="form-control" name="email" pattern=".*@\w{2,}\.\w{2,}.*" data-error="That doesn’t look quite right. Please enter your email in this format: name@domain.com." aria-required="true" required/>
-                <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-              </div>
-            </div>
-          </div>
-          <div class = "inputRow">
+            <div class="inputRow">
               <div class="inputGrouping">
                 <div class="form-group has-feedback rowItem">
-                  <label for="streetAddress" class="control-label">Street Address:</label>
-                  <input id="streetAddress" type="text" class="form-control" name="streetAddress" data-error="Please enter your first name." aria-required="true" required/> 
+                  <label for="phone" class="control-label">Phone number (optional)</label>
+                  <input id="phone" type="tel" class="form-control phone" name="phone-number" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" data-error="That doesn't look quite right. Please enter your phone number in this format: xxx-xxx-xxxx." aria-required="false"/>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </div>                  
-              </div>
-              <div class="inputGrouping">
-                <div class="form-group has-feedback rowItem">
-                  <label for="city" class="control-label">Town/City:</label>
-                  <input id="city" type="text" class="form-control" name="city" data-error="Please enter your town or city." aria-required="true" required/> 
-                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </div>                 
+                </div>                   
               </div>
               <div class="inputGrouping">
                 <div class="form-group has-feedback">
-                  <label for="zip" class="control-label">ZIP Code</label>
-                  <input id="zip" type="text" class="form-control zip" name="zip" minlength="5" maxlength="10" placeholder="00000 or 00000-0000" pattern="(\d{5}([\-]\d{4})?)" data-error="Please enter your zip code." aria-required="true" required/>
+                  <label for="email" class="control-label">Email</label>
+                  <input id="email" type="email" class="form-control" name="email" pattern=".*@\w{2,}\.\w{2,}.*" data-error="That doesn’t look quite right. Please enter your email in this format: name@domain.com." aria-required="true" required/>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </div>                                  
+                </div>
               </div>
+            </div>
+            <div class = "inputRow">
+                <div class="inputGrouping">
+                  <div class="form-group has-feedback rowItem">
+                    <label for="streetAddress" class="control-label">Street Address:</label>
+                    <input id="streetAddress" type="text" class="form-control" name="streetAddress" data-error="Please enter your first name." aria-required="true" required/> 
+                    <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                  </div>                  
+                </div>
+                <div class="inputGrouping">
+                  <div class="form-group has-feedback rowItem">
+                    <label for="city" class="control-label">Town/City:</label>
+                    <input id="city" type="text" class="form-control" name="city" data-error="Please enter your town or city." aria-required="true" required/> 
+                    <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                  </div>                 
+                </div>
+                <div class="inputGrouping">
+                  <div class="form-group has-feedback">
+                    <label for="zip" class="control-label">ZIP Code</label>
+                    <input id="zip" type="text" class="form-control zip" name="zip" minlength="5" maxlength="10" placeholder="00000 or 00000-0000" pattern="(\d{5}([\-]\d{4})?)" data-error="Please enter your zip code." aria-required="true" required/>
+                    <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                  </div>                                  
+                </div>
+            </div>
+          </div>
+          <div class = "claimData">
+            <p class = "sectionHeader">Incident Report / Claim Data</p>
+            <div class = "inputRow">
+              <div class="inputGrouping">
+                <fieldset class="form-group">
+                  <legend class="radio-checkbox-title radio-checkbox-title-horizontal">Category of Claim</legend>
+                  <div>
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Bodily Injury Liability</span>
+                </label>
+                
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Medical Payments or Personal Injury Protection (PIP)</span>
+                </label>
+                
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Property Damage Liability</span>
+                </label>
+                  </div>
+                  <div>
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Collision</span>
+                </label>
+                
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Comprehensive</span>
+                </label>
+                
+                    <label class="radio-inline">
+                  <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                  <span>Uninsured and Underinsured Motorist Coverage</span>
+                </label>
+                  
+                  </div>
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </fieldset>
+              </div>
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="fName" class="control-label">Policy Number</label>
+                  <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div> 
+            <div class = "inputRow">
+              <div class="inputGrouping">
+                <div class="form-group has-feedback rowItem">
+                  <label for="fName" class="control-label">Location of Loss (Approximate Street Address)</label>
+                  <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="inputGrouping">
+                <div class="form-group has-feedback disabled">
+                  <label for="name" class="control-label">Location in Longtitude, Latitude Coordinates:</label>
+                  <input id="name" type="text" class="form-control" name="name" data-error="Please enter your name." disabled aria-required="false"/> 
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true" disabled ></span><div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class = "inputRow">
+              <div class="inputGrouping">
+                <div class="form-group has-feedback">
+                  <label for="comment">Description of Incident</label>
+                  <textarea class="form-control" maxlength="250" rows="5" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
+                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div> 
+            <button class="btn btn-secondary btn-block">
+              <span>Submit</span>
+            </button>
           </div>
         </div>
       </div>
-      <footer>
-          <div class="footerBar">
-              <p>Footer Goes Here</p>
-          </div>
-      </footer>
   </body>
+  <footer>
+    <div class="footerBar">
+        <p>Footer Goes Here</p>
+    </div>
+</footer>
 </html>
