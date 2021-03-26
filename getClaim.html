@@ -184,7 +184,6 @@
             </div>
           </div>
       </header>
-			<!-- End of Header--------------------- -->
       <div class = "fullBodyWrap">
         <div class = "websiteTitle">
             <p>Retrieving your Incident Report</p>
@@ -194,29 +193,49 @@
           <div class = "searchData">
             <p class = "sectionHeader">Enter any two of the following fields in order to search for your claim.</p>
             <div class = "inputRow">
-							<div class="form-group has-feedback">
-    						<div class="inputGrouping">
-									<label for="HorizSelectAlt" class="control-label select-label">Category of Claim</label>
-  								<div class="select-container">
-    								<select id="HorizSelectAlt" name="HorizSelectAlt" class="form-control" required>
-      								<option value="">Please Select</option>
-      								<option value="first">Bodily Injury Liability</option>
-      								<option value="second">Medical Payments or Personal Injury Protection (PIP)</option>
-      								<option value="third">Property Damage Liability</option>
-      								<option value="fourth">Collision</option>
-											<option value="fifth">Comprehensive</option>
-											<option value="sixth">Uninsured and Underinsured Motorist Coverage</option>
-    								</select>
-    								<span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-  								</div>
-  							</div>
-							</div>
+                <div class="inputGrouping">
+                    <fieldset class="form-group">
+                    <legend class="radio-checkbox-title radio-checkbox-title-horizontal">Category of Claim</legend>
+                    <div>
+                        <label class="radio-inline">
+                    <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                    <span>Bodily Injury Liability</span>
+                    </label>
+                    
+                        <label class="radio-inline">
+                    <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                    <span>Medical Payments or Personal Injury Protection (PIP)</span>
+                    </label>
+                    
+                        <label class="radio-inline">
+                    <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                    <span>Property Damage Liability</span>
+                    </label>
+                    </div>
+                    <div>
+                            <label class="radio-inline">
+                        <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                        <span>Collision</span>
+                        </label>
+                        
+                            <label class="radio-inline">
+                        <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                        <span>Comprehensive</span>
+                        </label>
+                        
+                            <label class="radio-inline">
+                        <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
+                        <span>Uninsured and Underinsured Motorist Coverage</span>
+                        </label>
+                        <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+                    </fieldset>
+                </div>
             </div>
             <div class = "inputRow">
                 <div class="inputGrouping">
                     <div class="form-group has-feedback rowItem">
                         <label for="fName" class="control-label">Policy Number</label>
-                        <input id="fName" type="text" pattern="[A-Z]\d{2}-[0-9]\d{8}$" class="form-control" placeholder="XX-########" data-error="Incorrect Format." name="policyNum" aria-required="true" required/> 
+                        <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
                         <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                     </div>
                 </div> 
@@ -245,77 +264,11 @@
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
-            </div>
-            <div class="submit">
-      				<button class="btn btn-secondary btn-block btn-border">
-  							<span>Submit</span>
-							</button>
-  					</div>
-					</div>
-					<div class="row card result">
-  					<h3>Results</h3>
-  					<div class="content">
-    					<table class="table">
-      					<thead>
-        					<tr>
-          					<th scope="col" class="col-xs-3">Category of Injury <i class="icon icon-caret-up-alt" aria-hidden="true"></i> </th>
-          					<th scope="col" class="col-xs-3">Policy Number</th>
-          					<th scope="col" class="col-xs-3">Location</th>
-										<th scope="col" class="col-xs-3">Description</th>
-        					</tr>
-      					</thead>
-      					<tbody>
-        					<tr>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr class="sample-table-collapse collapse">
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr class="sample-table-collapse collapse">
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-        					<tr class="sample-table-collapse collapse">
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>Category</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>XX-########</td>
-          					<td><span class="data-prefix-xs xs-prefix-vertical"></span>1 Hartford Street</td>
-										<td><span class="data-prefix-xs xs-prefix-vertical"></span>An accident involving two automobiles happened at this location.</td>
-        					</tr>
-      					</tbody>
-    					</table>
-    					<a class="accordion-toggle collapsed" data-toggle="collapse" data-target=".sample-table-collapse" href="#" onclick="event.preventDefault()">
-      					<div class="content-align">
-        					<span class="content-table-span"></span>
-      					</div>
-    					</a>
-  					</div>
-					</div>
+            </div> 
+            <button class="btn btn-secondary btn-block">
+              <span>Submit</span>
+            </button>
+          </div>
         </div>
       </div>
   </body>
@@ -338,7 +291,8 @@
           <p class="copyright">&copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> The Hartford</p>
         </div>
         <div class="col-sm-12 col-md-2 text-right">
-          <img src="logo.png" alt="Logo">
+          <img src="images/norton.svg" alt="Norton Secured - Powered by VeriSign" class="norton">
+        </div>
       </div>
     </div>
   </footer>
