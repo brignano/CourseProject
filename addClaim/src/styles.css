@@ -1,0 +1,55 @@
+@import url('https://ts0.hfdstatic.com/sites/higux/v3.3.44/css/screen.min.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F7F7F7;
+}
+.fullBodyWrap{
+    padding-bottom: 44px;
+}
+.sectionHeader{
+text-align: center;
+}
+
+.headerBar{
+    background-color: #B6D3E9;
+}
+
+.websiteTitle{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+
+}
+
+.policyHolderContactInfo{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+}
+.rowItem{
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+.inputGrouping{
+    display: inline-block;
+    padding-right: 20px;    
+
+}
+
+.inputRow{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.inputsWrap{
+    display: inline;
+}
