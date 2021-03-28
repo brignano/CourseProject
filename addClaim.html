@@ -256,14 +256,14 @@
               <div class="inputGrouping">
 									<label for="HorizSelectAlt" class="control-label select-label">Category of Claim</label>
   								<div class="select-container">
-    								<select id="HorizSelectAlt" name="HorizSelectAlt" class="form-control" required>
+    								<select id="categoryOfClaimInput" name="HorizSelectAlt" class="form-control" required>
       								<option value="">Please Select</option>
-      								<option value="first">Bodily Injury Liability</option>
-      								<option value="second">Medical Payments or Personal Injury Protection (PIP)</option>
-      								<option value="third">Property Damage Liability</option>
-      								<option value="fourth">Collision</option>
-											<option value="fifth">Comprehensive</option>
-											<option value="sixth">Uninsured and Underinsured Motorist Coverage</option>
+      								<option value="categoryBodily">Bodily Injury Liability</option>
+      								<option value="categoryMedical">Medical Payments or Personal Injury Protection (PIP)</option>
+      								<option value="categoryProperty">Property Damage Liability</option>
+      								<option value="categoryCollision">Collision</option>
+											<option value="categoryComprehensive">Comprehensive</option>
+											<option value="categoryUninsured">Uninsured and Underinsured Motorist Coverage</option>
     								</select>
     								<span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
   								</div>
@@ -273,7 +273,7 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback rowItem">
                   <label for="policyNumber" class="control-label">Policy Number</label>
-                  <input id="policyNumber" type="text" class="form-control" name="policyNumber" data-error="Please enter your policy number." aria-required="true" required/> 
+                  <input id="policyNumberInput" type="text" class="form-control" name="policyNumber" data-error="Please enter your policy number." aria-required="true" required/> 
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -282,7 +282,7 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback rowItem">
                   <label for="location" class="control-label">Location of Loss (Approximate Street Address)</label>
-                  <input id="location" type="text" class="form-control" name="location" data-error="Please enter an approximate address for where the incident occured." aria-required="true" required/> 
+                  <input id="locationOfLossInput" type="text" class="form-control" name="location" data-error="Please enter an approximate address for where the incident occured." aria-required="true" required/> 
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -298,13 +298,13 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback">
                   <label for="comment">Description of Incident</label>
-                  <textarea id="description" class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
+                  <textarea id="incidentDescriptionInput" class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
             </div> 
             <div class="submit">
-      				<button class="btn btn-secondary btn-block btn-border" onclick="submitInfo()">
+      				<button class="btn btn-secondary btn-block btn-border" onclick="storeInfo()">
   							<span>Submit</span>
 							</button>
           </div>
