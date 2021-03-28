@@ -218,8 +218,8 @@
             <div class = "inputRow">
                 <div class="inputGrouping">
                     <div class="form-group has-feedback rowItem">
-                        <label for="fName" class="control-label">Policy Number</label>
-                        <input id="fName" type="text" pattern="[A-Z]\d{2}-[0-9]\d{8}$" class="form-control" placeholder="XX-########" data-error="Incorrect Format." name="policyNumber" aria-required="true" required/> 
+                        <label for="policyNumber" class="control-label">Policy Number</label>
+                        <input id="policyNumberSearch" type="text" pattern="[A-Z]\d{2}-[0-9]\d{8}$" class="form-control" placeholder="XX-########" data-error="Please enter your policy number." name="policyNumber" aria-required="true" required/> 
                         <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                     </div>
                 </div> 
@@ -227,15 +227,15 @@
             <div class = "inputRow">
               <div class="inputGrouping">
                 <div class="form-group has-feedback rowItem">
-                  <label for="fName" class="control-label">Location of Loss (Approximate Street Address)</label>
-                  <input id="fName" type="text" class="form-control" name="fName" data-error="Please enter your first name." aria-required="true" required/> 
+                  <label for="locationOfLoss" class="control-label">Location of Loss (Approximate Street Address)</label>
+                  <input id="locationOfLossSearch" type="text" class="form-control" name="locationOfLoss" data-error="Please enter an approximate address for where the incident occured." aria-required="true" required/> 
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
               <div class="inputGrouping">
                 <div class="form-group has-feedback disabled">
-                  <label for="name" class="control-label">Location in Longtitude, Latitude Coordinates:</label>
-                  <input id="name" type="text" class="form-control" name="name" data-error="Please enter your name." disabled aria-required="false"/> 
+                  <label for="coordinates" class="control-label">Location in Longtitude, Latitude Coordinates:</label>
+                  <input id="coordinatesOutput" type="text" class="form-control" name="coordinates" data-error="Please enter your name." disabled aria-required="false"/> 
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true" disabled ></span><div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -244,7 +244,7 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback">
                   <label for="comment">Description of Incident</label>
-                  <textarea class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
+                  <textarea id = "incidentDescriptionInput" class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>

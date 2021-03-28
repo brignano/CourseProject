@@ -3,7 +3,8 @@ let category;
 let locationOfLoss;
 let incidentDescription;
 
-function storeInfo(){   //gets the values the user inputted and prints them out via console log
+function storeInfo(){   //is called when the user presses the 'submit' button.
+    //Grabs the values the user inputted in each field and prints them out via console log
     policyNumber = document.getElementById('policyNumberInput');
     console.log("Policy Number: "+policyNumber.value);
 
@@ -17,6 +18,7 @@ function storeInfo(){   //gets the values the user inputted and prints them out 
     console.log("Location of Loss: "+incidentDescription.value);
 } 
 
-function showResults() {
-   document.getElementById('claimSearchResults').style.display = "block";
+function showResults() {    //is called when the user clicks the 'submit' button ONLY on the getClaim page
+    //displays the results block (was previously hidden)
+    document.getElementById('claimSearchResults').style.display = "block";
 }
