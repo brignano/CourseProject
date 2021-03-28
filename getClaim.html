@@ -5,6 +5,8 @@
         <link href="https://ts0.hfdstatic.com/sites/higux/v3.3.44/css/screen.min.css" rel="stylesheet">
         <link href="Main.CSS" rel="stylesheet">
         <script type="text/javascript" src="https://ts0.hfdstatic.com/sites/higux/v3.3.44/js/app.min.js"></script>
+        <script type="text/javascript" src="Main.JS"></script>
+
     </head>
     <body>
       <header>
@@ -187,7 +189,8 @@
 			<!-- End of Header--------------------- -->
       <div class = "fullBodyWrap">
         <div class = "websiteTitle">
-            <p>Retrieving your Incident Report</p>
+            <h3>Retrieving your Incident Report</h3>
+            <p>All information is required unless it's listed as optional</p>
         </div>
         
         <div class = "inputsWrap">
@@ -241,18 +244,18 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback">
                   <label for="comment">Description of Incident</label>
-                  <textarea class="form-control" maxlength="250" rows="5" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
+                  <textarea class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
             </div>
             <div class="submit">
-      				<button class="btn btn-secondary btn-block btn-border">
+      				<button class="btn btn-secondary btn-block btn-border" onclick="showResults()">
   							<span>Submit</span>
 							</button>
   					</div>
 					</div>
-					<div class="row card result">
+					<div class="row card result" id="claimSearchResults">
   					<h3>Results</h3>
   					<div class="content">
     					<table class="table">

@@ -5,6 +5,7 @@
         <link href="https://ts0.hfdstatic.com/sites/higux/v3.3.44/css/screen.min.css" rel="stylesheet">
         <link href="Main.CSS" rel="stylesheet">
         <script type="text/javascript" src="https://ts0.hfdstatic.com/sites/higux/v3.3.44/js/app.min.js"></script>
+        <script type="text/javascript" src="Main.JS"></script>
     </head>
     <body>
       <header>
@@ -186,7 +187,8 @@
       </header>
       <div class = "fullBodyWrap">
         <div class = "websiteTitle">
-            <p>Filing your Incident Report</p>
+            <h3>Filing your Incident Report</h3>
+            <p>All information is required unless it's listed as optional</p>
         </div>
         
         <div class = "inputsWrap">
@@ -252,44 +254,22 @@
             <p class = "sectionHeader">Incident Report / Claim Data</p>
             <div class = "inputRow">
               <div class="inputGrouping">
-                <fieldset class="form-group">
-                  <legend class="radio-checkbox-title radio-checkbox-title-horizontal">Category of Claim</legend>
-                  <div>
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Bodily Injury Liability</span>
-                </label>
-                
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Medical Payments or Personal Injury Protection (PIP)</span>
-                </label>
-                
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Property Damage Liability</span>
-                </label>
-                  </div>
-                  <div>
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 1" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Collision</span>
-                </label>
-                
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 2" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Comprehensive</span>
-                </label>
-                
-                    <label class="radio-inline">
-                  <input type="radio" class="form-control" value="Radio Option 3" name="HorizontalStackedRadio" data-error="Please check one option" required>
-                  <span>Uninsured and Underinsured Motorist Coverage</span>
-                </label>
-                  
-                  </div>
-                  <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
-                </fieldset>
-              </div>
+									<label for="HorizSelectAlt" class="control-label select-label">Category of Claim</label>
+  								<div class="select-container">
+    								<select id="HorizSelectAlt" name="HorizSelectAlt" class="form-control" required>
+      								<option value="">Please Select</option>
+      								<option value="first">Bodily Injury Liability</option>
+      								<option value="second">Medical Payments or Personal Injury Protection (PIP)</option>
+      								<option value="third">Property Damage Liability</option>
+      								<option value="fourth">Collision</option>
+											<option value="fifth">Comprehensive</option>
+											<option value="sixth">Uninsured and Underinsured Motorist Coverage</option>
+    								</select>
+    								<span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
+  								</div>
+  							</div>
+            </div>
+            <div class="inputRow">
               <div class="inputGrouping">
                 <div class="form-group has-feedback rowItem">
                   <label for="fName" class="control-label">Policy Number</label>
@@ -318,7 +298,7 @@
               <div class="inputGrouping">
                 <div class="form-group has-feedback">
                   <label for="comment">Description of Incident</label>
-                  <textarea class="form-control" maxlength="250" rows="5" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
+                  <textarea class="form-control" maxlength="250" rows="5" cols="50" id="comment" aria-required="true" required></textarea><small class="textarea-character-limit"></small>
                   <span class="icon icon-attention form-control-feedback" aria-hidden="true"></span><div class="help-block with-errors"></div>
                 </div>
               </div>
