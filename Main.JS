@@ -1,5 +1,5 @@
 let policyNumber;
-let category;
+let categoryOfClaim;
 let locationOfLoss;
 let coordinates;
 let incidentDescription;
@@ -10,14 +10,14 @@ function storeInfo(){   //is called when the user presses the 'submit' button.
     console.log("Policy Number: "+policyNumber.value);
 
     categoryOfClaim = document.getElementById('categoryOfClaimInput');
-    console.log("Category: "+category.value);
+    console.log("Category: "+categoryOfClaim.value);
 
     locationOfLoss = document.getElementById('locationOfLossInput');
     console.log("Location of Loss: "+locationOfLoss.value);
     updateLocation(locationOfLoss);
 
     incidentDescription = document.getElementById('incidentDescriptionInput');
-    console.log("Location of Loss: "+incidentDescription.value);
+    console.log("Description of Incident: "+incidentDescription.value);
 } 
 
 function updateLocation(locationOfLoss){  //this will be the method to convert the location of the loss to coordinates
