@@ -1,29 +1,39 @@
-// Use Express
-var express = require("express");
-// Use body-parser
-var bodyParser = require("body-parser");
-
-// Create new instance of the express server
+var express = require('express');
 var app = express();
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
 
-// Define the JSON parser as a default way 
-// to consume and produce data through the 
-// exposed APIs
-app.use(bodyParser.json());
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// Create link to Angular build directory
-// The `ng build` command will save the result
-// under the `dist` folder.
-var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
-
-// Init the server
-var server = app.listen(process.env.PORT || 8088, function () {
-    var port = server.address().port;
-    console.log("App now running on port", port);
+app.get('/', function (req, res) {
+    res.sendFile(__dirname+ '/addclaimexample.html');
 });
 
-/*  "/api/status"
- *   GET: Get server status
- *   PS: it's just an example, not mandatory
- */
+app.post('/addclaim', function (req, res) {
+	var policynumber = req.body.policynumber;
+	var location = req.body.location;
+	var category = req.body.category;
+	var description = req.body.description;
+	res.send('Claim Submitted Successfully!');
+	MongoClient.connect(url, function(err, db) {
+  		if (err) throw err;
+  		var dbo = db.db("testdb");
+  		var myobj = { policynumber: policynumber, location: location, category: category, description: description };
+ 		dbo.collection("claim").insertOne(myobj, function(err, res) {
+    			if (err) throw err;
+    			console.log("1 document inserted");
+   			db.close();
+  		});
+	}); 
+});
+
+app.post('/getCoordinates', function (req, res) {
+});
+
+app.post('/getClaims', function (req, res) {
+});
+
+var server = app.listen(5000, function () {
+    console.log('Node server is running..');
+});
